@@ -29,7 +29,7 @@ namespace ASPNetCoreVueWithFullCalendar.Controllers
         {
             var events = new List<Event>
             {
-                new Event{id = 0,title = "Event 1",start = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}",end = $"{DateTime.Now.AddHours(1):yyyy-MM-dd HH:mm:ss}", allDay = false, editable = false}
+                new Event{id = 0,title = "Event 1",start = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}",end = $"{DateTime.Now.AddHours(1):yyyy-MM-dd HH:mm:ss}", allDay = false, editable = true}
             };
 
             return await Task.FromResult(Json(events));
