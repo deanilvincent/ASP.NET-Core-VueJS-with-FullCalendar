@@ -23,7 +23,7 @@
                 config: {
                     defaultView: 'month',
                     eventRender: function (event, element) {
-                        console.log(event)
+                        event.description
                     }
                 }
             }

@@ -16,6 +16,7 @@ namespace ASPNetCoreVueWithFullCalendar.Controllers
         public string end { get; set; }
         public bool allDay { get; set; }
         public bool editable { get; set; }
+        public string description { get; set; }
     }
 
     public class HomeController : Controller
@@ -29,7 +30,7 @@ namespace ASPNetCoreVueWithFullCalendar.Controllers
         {
             var events = new List<Event>
             {
-                new Event{id = 0,title = "Event 1",start = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}",end = $"{DateTime.Now.AddHours(1):yyyy-MM-dd HH:mm:ss}", allDay = false, editable = true}
+                new Event{id = 0,title = "Event 1",start = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}",end = $"{DateTime.Now.AddHours(1):yyyy-MM-dd HH:mm:ss}", description = "I am event 1"}
             };
 
             return await Task.FromResult(Json(events));
