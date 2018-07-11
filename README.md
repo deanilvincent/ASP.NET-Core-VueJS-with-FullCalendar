@@ -1,1 +1,1 @@
-# ASP.NET-Core-VueJS-with-FullCalendar
+# ASP.NET Core Vue.JS with FullCalendar
